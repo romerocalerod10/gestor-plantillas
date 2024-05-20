@@ -1,0 +1,1328 @@
+{
+  "plantillas": [
+    {
+      "id": 1,
+      "nombre": "Bienvenido",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Bienvenido a ALPISPA SISTEMAS",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 11,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Listado Paradas",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "LISTADO DE PARADAS",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 0,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 2,
+          "id": 1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": 5
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "PROHIBIDA LA VENTA",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "SALE FORBIDDEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VERKAUF VERBOTEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VENTE INTERDIT",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Toma Servicio",
+      "contenido": [
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "TOMA SERVICIO ",
+              "id": 0,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "COMIENZO: ",
+              "id": 1,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "CONDUCTOR: ",
+              "id": 2,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "GUAGUA: ",
+              "id": 3,
+              "posicion": 0
+            },
+            {
+              "texto": "EXPEND: ",
+              "id": 4,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": 5,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "PROHIBIDA LA VENTA",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "SALE FORBIDDEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VERKAUF VERBOTEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VENTE INTERDIT",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Pago Directo",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "FACTURA SIMPLIFICADA",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Ticket: ",
+              "id": 0,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "TARIFA NORMAL",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 30,
+          "posicion_x": 0,
+          "tamano_fuente": 14,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 2,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 3,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 4,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "NUM. VIAJEROS: ",
+              "id": 5,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": " €",
+              "id": 6,
+              "posicion": 1
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Salcai Utinsa S.A. - CIF: A-35604487",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Incluye S.O.V e I.G.I.C",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 3,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Pago Directo Anulado",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "FACTURA SIMPLIFICADA",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Ticket: ",
+              "id": 0,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "TARIFA NORMAL",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 30,
+          "posicion_x": 0,
+          "tamano_fuente": 14,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 2,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 3,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 4,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "NUM. VIAJEROS: ",
+              "id": 5,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": " €",
+              "id": 6,
+              "posicion": 1
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Salcai Utinsa S.A. - CIF: A-35604487",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Incluye S.O.V e I.G.I.C",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "ANULADO",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 3,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Pago Directo IV",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "FACTURA SIMPLIFICADA",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Ticket: ",
+              "id": 0,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "PREPAGO IDA Y VUELTA",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 30,
+          "posicion_x": 0,
+          "tamano_fuente": 14,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "ROUND TRIP TICKET",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 14,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "HIN-UND RÜCKFAHRTICKET",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 14,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 3,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 150,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 2,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 3,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 4,
+          "texto": "",
+          "centrado": false,
+          "ancho": 1,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "NUM. VIAJEROS: ",
+              "id": 5,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 20,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": " €",
+              "id": 6,
+              "posicion": 1
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Salcai Utinsa S.A. - CIF: A-35604487",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Incluye S.O.V e I.G.I.C",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 8,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Control de Pasajeros Porcentaje",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "CONTROL DE PASAJEROS",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 0,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "EXPEND: ",
+              "id": 1,
+              "posicion": 0
+            },
+            {
+              "texto": " GUAGUA.: ",
+              "id": 2,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "SERVICIO: ",
+              "id": 3,
+              "posicion": 0
+            },
+            {
+              "texto": " COND.: ",
+              "id": 4,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "LINEA: ",
+              "id": 5,
+              "posicion": 0
+            },
+            {
+              "texto": " EXPEND.: ",
+              "id": 6,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Sentido: ",
+              "id": 7,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": 8,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Pago directo normal: ",
+              "id": 9,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Billete Ida-Vuelta: ",
+              "id": 10,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "TOTAL PASAJEROS: ",
+              "id": 11,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "PROHIBIDA LA VENTA",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "SALE FORBIDDEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VERKAUF VERBOTEN",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "VENTE INTERDIT",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 13,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Control de Pasajeros Inspector",
+      "contenido": [
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "CONTROL DE PASAJEROS",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 25,
+          "posicion_x": 0,
+          "tamano_fuente": 16,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": 0,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "EXPEND: ",
+              "id": 1,
+              "posicion": 0
+            },
+            {
+              "texto": " GUAGUA.: ",
+              "id": 2,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "SERVICIO: ",
+              "id": 3,
+              "posicion": 0
+            },
+            {
+              "texto": " COND.: ",
+              "id": 4,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "LINEA: ",
+              "id": 5,
+              "posicion": 0
+            },
+            {
+              "texto": " EXPEND.: ",
+              "id": 6,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Sentido: ",
+              "id": 7,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": 8,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Pago directo normal: ",
+              "id": 9,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Billete Ida-Vuelta: ",
+              "id": 10,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 80,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "TOTAL PASAJEROS: ",
+              "id": 11,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 0,
+          "id": -1,
+          "texto": "Emitido por:",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 15,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        },
+        {
+          "tipo": 1,
+          "id": -1,
+          "texto": "",
+          "centrado": false,
+          "ancho": 0,
+          "posicion_y": 5,
+          "posicion_x": 0,
+          "tamano_fuente": 9,
+          "negrita": true,
+          "separacion_elemento_lista": -1,
+          "textos": [
+            {
+              "texto": "Inspector Nº: ",
+              "id": 12,
+              "posicion": 0
+            }
+          ]
+        },
+        {
+          "tipo": 3,
+          "id": -1,
+          "texto": "",
+          "centrado": true,
+          "ancho": 0,
+          "posicion_y": 10,
+          "posicion_x": 0,
+          "tamano_fuente": 0,
+          "negrita": true,
+          "separacion_elemento_lista": -1
+        }
+      ]
+    }
+
+  ],
+  "leyenda":
+  {
+    "tipos": [
+      {
+        "id": 0,
+        "nombre": "ESTATICO",
+        "descripcion": "Se usa para cuando se quiera pintar en el ticket un texto fijo"
+      },
+      {
+        "id": 1,
+        "nombre": "DINAMICO",
+        "descripcion": "Se usa para cuando se quiera pintar en el ticket un texto con contenido dinámico"
+      },
+      {
+        "id": 2,
+        "nombre": "LISTA",
+        "descripcion": "Se usa para cuando se quiera pintar en el ticket una lista dinamica"
+      },
+      {
+        "id": 3,
+        "nombre": "QR",
+        "descripcion": "Se usa para cuando se quiera pintar en el ticket un QR"
+      }
+    ],
+    "anchos": [
+      {
+        "id": 0,
+        "nombre": "DEFECTO"
+      },
+      {
+        "id": 1,
+        "nombre": "DINAMICO"
+      }
+    ],
+    "posiciones" : [
+      {
+        "id": 0,
+        "nombre": "IZQUIERDA"
+      },
+      {
+        "id": 1,
+        "nombre": "DERECHA"
+      }
+    ]
+  }
+}

@@ -10,6 +10,6 @@ export class Contenido {
   posicion_x: number = 0;
   tamano_fuente: number = 15;
   negrita: boolean = false;
-  separacion_elemento_lista: number = 1;
+  separacion_elemento_lista: number = -1;
   textos: Texto[] = [];
 }

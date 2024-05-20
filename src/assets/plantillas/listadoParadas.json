@@ -1,0 +1,91 @@
+{
+  "id": 2,
+  "nombre": "Listado Paradas",
+  "contenido": [
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "LISTADO DE PARADAS",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 16,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 0,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 2,
+      "id": 1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 10,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": 5
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "PROHIBIDA LA VENTA",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 13,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "SALE FORBIDDEN",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 13,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "VERKAUF VERBOTEN",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 13,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "VENTE INTERDIT",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 13,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+
+    }
+  ]
+}

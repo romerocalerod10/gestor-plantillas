@@ -3,18 +3,20 @@ import {Plantilla} from "../../models/Plantilla";
 import {Contenido} from "../../models/Contenido";
 import {Texto} from "../../models/Texto";
 import {DataService} from "../../services/data.service";
+import {ToastrService} from "ngx-toastr";
+import {PlantillaService} from "../../services/plantilla.service";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent implements  OnInit {
+export class HomeComponent implements OnInit {
   title = 'gestor-plantillas';
 
-  plantillas: Plantilla[] = [];
+  plantilla: Plantilla = new Plantilla();
 
-  plantillaSeleccionada: number = 2;
+  datosDinamicosSeleccionados: number = 3;
 
   anchoTicket: number = 200;
   altoTicket: number = 500;
@@ -44,12 +46,155 @@ export class HomeComponent implements  OnInit {
 
   editMode: boolean[] = [];
 
+  plantillaSeleccionadaSelect: number = 1;
+  plantillaSeleccionada: Plantilla = new Plantilla();
 
-  constructor(private dataService: DataService) {
+  incrementoY: { [key: string]: number } = {};
+
+
+  constructor(private dataService: DataService,
+              private toastr: ToastrService,
+              private plantillaService: PlantillaService) {
   }
 
   ngOnInit(): void {
+    this.cambiarDatosDinamicosSeleccionados();
     this.cambiarPlantilla();
+  }
+
+  cambiarPlantilla() {
+
+    switch (this.plantillaSeleccionadaSelect) {
+      case 1:
+        this.plantillaService.cargarPlantillaBienvenido().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(1);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 2:
+        this.plantillaService.cargarPlantillaListadoParadas().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(2);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 3:
+        this.plantillaService.cargarPlantillaTomaServicio().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(3);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 4:
+        this.plantillaService.cargarPlantillaPagoDirecto().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(4);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 5:
+        this.plantillaService.cargarPlantillaPagoDirectoAnulado().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(5);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 6:
+        this.plantillaService.cargarPlantillaPagoDirectoIV().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(6);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 7:
+        this.plantillaService.cargarPlantillaControlPasajerosPorcentaje().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(7);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+      case 8:
+        this.plantillaService.cargarPlantillaControlPasajerosInspector().subscribe(
+          data => {
+            this.plantillaSeleccionada = data;
+            this.nombrePlantilla = this.plantillaSeleccionada.nombre;
+            this.numeroPlantilla = this.plantillaSeleccionada.id;
+            this.cambiarDatosDinamicosSeleccionados(8);
+            this.contenidoActual = new Contenido();
+            this.calcularIncrementosY();
+            console.log('Plantilla cargada:', this.plantillaSeleccionada);
+          },
+          error => {
+            console.error('Error al cargar la plantilla:', error);
+          }
+        );
+        break;
+    }
+
   }
 
   cambiarTipo() {
@@ -60,11 +205,32 @@ export class HomeComponent implements  OnInit {
 
   }
 
-  addLinea(contenido: string) {
-    if (contenido !== undefined && contenido !== null && contenido !== "") {
-      this.contenidosDinamico.push(contenido);
+  cambiarPosicion() {
+
+  }
+
+  addPlantilla() {
+
+    if (this.nombrePlantilla == '' && this.numeroPlantilla == 0) {
+      this.toastr.error('Para crear una plantilla debe introducir el nombre y el número', 'Error');
+      return;
     }
-    this.contenidoDinamico = "";
+
+    const plantilla = new Plantilla();
+    plantilla.id = this.numeroPlantilla;
+    plantilla.nombre = this.nombrePlantilla;
+    this.plantilla = plantilla;
+
+    this.toastr.success('Plantilla creada correctamente', 'Éxito');
+  }
+
+  isPlantillaCreada() {
+    // return this.plantilla.id === -1;
+    return false;
+  }
+
+
+  addContenido() {
   }
 
   addContenidoDinamicoCompuesto() {
@@ -86,9 +252,12 @@ export class HomeComponent implements  OnInit {
     this.contenidoDinamico = "";
   }
 
-  cambiarPlantilla() {
-    console.log("Cambiando plantilla a: " + this.plantillaSeleccionada)
-    switch (this.plantillaSeleccionada) {
+  cambiarDatosDinamicosSeleccionados(id?: number) {
+    console.log("Cambiando plantilla a: " + this.datosDinamicosSeleccionados)
+    if (id !== undefined) {
+      this.datosDinamicosSeleccionados = id;
+    }
+    switch (this.datosDinamicosSeleccionados) {
       case 1:
         this.contenidosDinamico = this.dataService.contenidoDinamicoPlantilla1;
         break;
@@ -119,5 +288,29 @@ export class HomeComponent implements  OnInit {
 
   deleteContenido(i: number) {
     this.contenidosDinamico.splice(i, 1);
+  }
+
+  deleteTextoDinamicoCompuesto(id: number) {
+    this.textosDinamicosCompuestos.splice(id, 1);
+    this.contenidoActual.textos.splice(id, 1);
+  }
+
+  deleteContenidoActual() {
+    this.contenidoActual = new Contenido();
+    this.textosDinamicosCompuestos = [];
+  }
+
+  contenidoSeleccionado(contenido: Contenido) {
+    console.log('ENTRO en contenidoSeleccionado', contenido);
+    this.contenidoActual = contenido;
+  }
+  // Calcula el incremento acumulativo de la posición Y
+  calcularIncrementosY() {
+    let total = 0;
+    this.plantillaSeleccionada.contenido.forEach((contenido, index) => {
+      total += contenido.posicion_y;
+      this.incrementoY[index.toString()] = total;
+    });
+    console.log('INCREMENTO', this.incrementoY);
   }
 }
