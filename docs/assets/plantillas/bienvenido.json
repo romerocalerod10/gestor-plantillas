@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "nombre": "Bienvenido",
+  "contenido": [
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "Bienvenido a ALPISPA SISTEMAS",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 11,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    }
+  ]
+}

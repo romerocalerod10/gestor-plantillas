@@ -1,0 +1,183 @@
+{
+  "id": 5,
+  "nombre": "Pago Directo Anulado",
+  "contenido": [
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "FACTURA SIMPLIFICADA",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 16,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "Ticket: ",
+          "id": 0,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "TARIFA NORMAL",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 30,
+      "posicion_x": 0,
+      "tamano_fuente": 14,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 20,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 2,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 3,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 4,
+      "texto": "",
+      "centrado": false,
+      "ancho": 1,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "NUM. VIAJEROS: ",
+          "id": 5,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 20,
+      "posicion_x": 0,
+      "tamano_fuente": 16,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": " €",
+          "id": 6,
+          "posicion": 1
+        }
+      ]
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "Salcai Utinsa S.A. - CIF: A-35604487",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 15,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "Incluye S.O.V e I.G.I.C",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "ANULADO",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 15,
+      "posicion_x": 0,
+      "tamano_fuente": 16,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 3,
+      "id": -1,
+      "texto": "",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 8,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    }
+  ]
+}
