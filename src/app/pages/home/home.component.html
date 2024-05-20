@@ -1,11 +1,79 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-5 mx-auto">
-      <div class="mx-auto mt-5 position-relative"
+
+      <div class="row mt-2">
+        <div class="col-6 text-center">
+          <span>Nombre: {{ nombrePlantilla }}</span>
+        </div>
+        <div class="col-6 text-center">
+          <span>Número plantilla: {{ numeroPlantilla == 0 ? '' : numeroPlantilla }}</span>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-3 position-relative"
            style="border: 2px solid black;"
            [ngStyle]="{'width': anchoTicket + 'pt', 'height': altoTicket + 'pt'}">
 
-        <span class="position-absolute"
+        <ng-container *ngIf="plantillaSeleccionada.id != -1" class="">
+
+          <ng-container *ngFor="let contenido of plantillaSeleccionada.contenido; let i = index">
+            <span class="position-absolute item-seleccionado"
+                  [ngStyle]="{
+                  'font-weight': contenido.negrita ? 'bold' : 'normal',
+                  'font-size': contenido.tamano_fuente + 'pt',
+                  'left': contenido.posicion_x + 'pt',
+                  'top': incrementoY[i.toString()] + 'pt',
+                  'width': contenido.centrado ? '100%' : 'auto',
+                  'text-align': contenido.centrado ? 'center' : 'left' }"
+                  *ngIf="contenido.tipo == 0 && contenido.texto !== ''" (click)="contenidoSeleccionado(contenido)">
+              <ng-container *ngIf="contenido.id == -1">
+                {{ contenido.texto }}
+              </ng-container>
+              <ng-container *ngIf="contenido.id != -1">
+                {{ contenido.texto }} {{ contenidosDinamico[contenido.id] }}
+              </ng-container>
+            </span>
+
+            <div class="position-absolute item-seleccionado"
+                 [ngClass]="{'d-flex': !contenido.centrado}"
+                 [ngStyle]="{
+                 'font-weight': contenido.negrita ? 'bold' : 'normal',
+                 'font-size': contenido.tamano_fuente + 'pt',
+                 'left': contenido.posicion_x + 'pt',
+                 'top': incrementoY[i.toString()] + 'pt',
+                 'width': contenido.centrado ? '100%' : 'auto',
+                 'text-align': contenido.centrado ? 'center' : 'left' }"
+                 *ngIf="contenido.tipo == 1 && contenido.textos == undefined || (contenido.textos != undefined && contenido.textos.length == 0)"
+                 (click)="contenidoSeleccionado(contenido)">
+              <span>{{contenidosDinamico[contenido.id]}}</span>
+            </div>
+
+            <div class="position-absolute item-seleccionado"
+                 [ngClass]="{'d-flex': !contenido.centrado}"
+                 [ngStyle]="{
+                 'font-weight': contenido.negrita ? 'bold' : 'normal',
+                 'font-size': contenido.tamano_fuente + 'pt',
+                 'left': contenido.posicion_x + 'pt',
+                 'top': incrementoY[i.toString()] + 'pt',
+                 'width': contenido.centrado ? '100%' : 'auto',
+                 'text-align': contenido.centrado ? 'center' : 'left' }"
+                 *ngIf="contenido.tipo == 1 && contenido.textos != undefined && contenido.textos.length > 0"
+                 (click)="contenidoSeleccionado(contenido)">
+                <span *ngFor="let texto of contenido.textos" style="white-space: nowrap;">
+                  <ng-container *ngIf="texto.posicion === 0">
+                    {{ texto.texto }} {{ this.contenidosDinamico[texto.id] }}&nbsp;
+                  </ng-container>
+                  <ng-container *ngIf="texto.posicion === 1">
+                    {{ this.contenidosDinamico[texto.id] }} {{ texto.texto }}&nbsp;
+                  </ng-container>
+                </span>
+            </div>
+          </ng-container>
+
+        </ng-container>
+
+        <span class="position-absolute item-seleccionado"
               [ngStyle]="{
               'font-weight': contenidoActual.negrita ? 'bold' : 'normal',
               'font-size': contenidoActual.tamano_fuente + 'pt',
@@ -14,36 +82,75 @@
               'width': contenidoActual.centrado ? '100%' : 'auto',
                'text-align': contenidoActual.centrado ? 'center' : 'left' }"
               *ngIf="contenidoActual.texto !== ''">
-          {{contenidoActual.texto}}
+          <ng-container *ngIf="contenidoActual.id == -1">
+            {{ contenidoActual.texto }}
+          </ng-container>
+          <ng-container *ngIf="contenidoActual.id != -1">
+            {{ contenidoActual.texto }} {{ contenidosDinamico[contenidoActual.id] }}
+          </ng-container>
         </span>
+
+        <div class="position-absolute item-seleccionado"
+             [ngClass]="{'d-flex': !contenidoActual.centrado}"
+             [ngStyle]="{
+              'font-weight': contenidoActual.negrita ? 'bold' : 'normal',
+              'font-size': contenidoActual.tamano_fuente + 'pt',
+              'left': contenidoActual.posicion_x + 'pt',
+              'top': contenidoActual.posicion_y + 'pt',
+              'width': contenidoActual.centrado ? '100%' : 'auto',
+               'text-align': contenidoActual.centrado ? 'center' : 'left' }"
+             *ngIf="contenidoActual.textos !== undefined && contenidoActual.textos.length > 0">
+          <span *ngFor="let texto of contenidoActual.textos" style="white-space: nowrap;">
+            <ng-container *ngIf="texto.posicion === 0">
+              {{ texto.texto }} {{ this.contenidosDinamico[texto.id] }}&nbsp;
+            </ng-container>
+            <ng-container *ngIf="texto.posicion === 1">
+              {{ this.contenidosDinamico[texto.id] }} {{ texto.texto }}&nbsp;
+            </ng-container>
+          </span>
+        </div>
+
 
       </div>
     </div>
     <div class="col-7" style="border-left: 2px solid lightgray; height: 100vh">
 
       <div class="titulo-configuracion mt-3">
-        <span>Plantillas</span>
-      </div>
-
-      <div class="row mt-1">
-        <div class="col">
-          <div class="form-group">
-            <select class="form-control" id="exampleSelect" (change)="cambiarPlantilla()"
-                    [(ngModel)]="plantillaSeleccionada">
-              <option [ngValue]="1">Plantilla 1</option>
-              <option [ngValue]="2">Plantilla 2</option>
-              <option [ngValue]="3">Plantilla 3</option>
-              <option [ngValue]="4">Plantilla 4</option>
-              <option [ngValue]="5">Plantilla 5</option>
-              <option [ngValue]="6">Plantilla 6</option>
-            </select>
+        <div class="row">
+          <div class="col-12">
+            <span>Plantillas</span>
           </div>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="form-group">
+          <select class="form-control"
+                  id="plantillas"
+                  (change)="cambiarPlantilla()"
+                  [(ngModel)]="plantillaSeleccionadaSelect">
+            <option [ngValue]="1">1 - Bienvenido</option>
+            <option [ngValue]="2">2 - Listado paradas</option>
+            <option [ngValue]="3">3 - Toma servicio</option>
+            <option [ngValue]="4">4 - Pago directo</option>
+            <option [ngValue]="5">5 - Pago directo anulado</option>
+            <option [ngValue]="6">6 - Pago directo IV</option>
+            <option [ngValue]="7">7 - Control pasajeros porcentaje</option>
+            <option [ngValue]="8">8 - Control pasajeros inspector</option>
+          </select>
         </div>
       </div>
 
       <div class="titulo-configuracion mt-3">
-        <span>Herramientas de configuración</span>
+        <div class="row">
+          <div class="col-10">
+            <span>Añadir plantilla</span>
+          </div>
+          <div class="col-2 text-end">
+            <i style="font-size: 30px" class="bi bi-plus cursor-mano" (click)="addPlantilla()"></i>
+          </div>
+        </div>
       </div>
+
       <div class="row mt-2">
         <div class="col">
           <div class="configuracion-ancho-ticket mt-2">
@@ -68,27 +175,48 @@
         <div class="col">
           <div class="mt-2">
             <label for="nombrePlantilla">Nombre plantilla:</label>
-            <input id="nombrePlantilla" type="text" [(ngModel)]="nombrePlantilla" class="form-control" placeholder="Nombre plantilla">
+            <input id="nombrePlantilla" type="text" [(ngModel)]="nombrePlantilla" class="form-control"
+                   placeholder="Nombre plantilla">
           </div>
         </div>
 
         <div class="col">
           <div class="mt-2">
             <label for="numeroPlantilla">Número plantilla:</label>
-            <input id="numeroPlantilla" type="number" [(ngModel)]="numeroPlantilla" class="form-control" placeholder="Número plantilla">
+            <input id="numeroPlantilla" type="number" [(ngModel)]="numeroPlantilla" class="form-control"
+                   placeholder="Número plantilla">
           </div>
         </div>
       </div>
 
       <div class="titulo-configuracion mt-3">
-        <span>Añadir nueva línea</span>
+        <div class="row">
+          <div class="col-10">
+            <span>Añadir nuevo contenido</span>
+          </div>
+          <div class="col-2 text-end">
+            <i style="font-size: 30px"
+               class="bi bi-plus cursor-mano"
+               [class.disabled]="isPlantillaCreada()"
+               (click)="addContenido()"></i>
+            <i style="font-size: 20px; position: relative; top: -3px;"
+               class="bi bi-trash cursor-mano"
+               [class.disabled]="isPlantillaCreada()"
+               (click)="deleteContenidoActual()"></i>
+          </div>
+        </div>
+
       </div>
 
       <div class="row mt-3">
         <div class="col">
           <div class="form-group">
             <label for="tipo">Tipo:</label>
-            <select class="form-control" id="tipo" (change)="cambiarTipo()" [(ngModel)]="contenidoActual.tipo">
+            <select class="form-control"
+                    id="tipo"
+                    [disabled]="isPlantillaCreada()"
+                    (change)="cambiarTipo()"
+                    [(ngModel)]="contenidoActual.tipo">
               <option [ngValue]="0">ESTÁTICO</option>
               <option [ngValue]="1">DINÁMICO</option>
               <option [ngValue]="2">LISTA</option>
@@ -99,13 +227,23 @@
         <div class="col">
           <div class="form-group">
             <label for="idDinamico">Id contenido dinámico</label>
-            <input id="idDinamico" type="number" class="form-control" placeholder="" [(ngModel)]="contenidoActual.id">
+            <input id="idDinamico"
+                   type="number"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="contenidoActual.id">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="textoFijo">Texto fijo</label>
-            <input id="textoFijo" type="text" class="form-control" placeholder="" [(ngModel)]="contenidoActual.texto">
+            <input id="textoFijo"
+                   type="text"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="contenidoActual.texto">
           </div>
         </div>
       </div>
@@ -117,14 +255,22 @@
               <label for="centrado">Centrado</label>
             </div>
             <div class="col-4 text-end">
-              <input style="transform: scale(1.5);" type="checkbox" [(ngModel)]="contenidoActual.centrado" id="centrado">
+              <input style="transform: scale(1.5);"
+                     type="checkbox"
+                     [disabled]="isPlantillaCreada()"
+                     [(ngModel)]="contenidoActual.centrado"
+                     id="centrado">
             </div>
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="ancho">Ancho:</label>
-            <select class="form-control" id="ancho" (change)="cambiarAncho()" [(ngModel)]="contenidoActual.ancho">
+            <select class="form-control"
+                    id="ancho"
+                    (change)="cambiarAncho()"
+                    [disabled]="isPlantillaCreada()"
+                    [(ngModel)]="contenidoActual.ancho">
               <option [ngValue]="0">DEFECTO</option>
               <option [ngValue]="1">DINÁMICO</option>
             </select>
@@ -133,7 +279,12 @@
         <div class="col">
           <div class="form-group">
             <label for="tamanoFuente">Tamaño fuente</label>
-            <input id="tamanoFuente" type="number" class="form-control" placeholder="" [(ngModel)]="contenidoActual.tamano_fuente">
+            <input id="tamanoFuente"
+                   type="number"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="contenidoActual.tamano_fuente">
           </div>
         </div>
       </div>
@@ -145,27 +296,47 @@
               <label for="negrita">Negrita</label>
             </div>
             <div class="col-4 text-end">
-              <input style="transform: scale(1.5);" type="checkbox" [(ngModel)]="contenidoActual.negrita" id="negrita">
+              <input style="transform: scale(1.5);"
+                     type="checkbox"
+                     [disabled]="isPlantillaCreada()"
+                     [(ngModel)]="contenidoActual.negrita"
+                     id="negrita">
             </div>
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="posicionX">Posición X</label>
-            <input id="posicionX" type="number" class="form-control" placeholder="" [(ngModel)]="contenidoActual.posicion_x">
+            <input id="posicionX"
+                   type="number"
+                   class="form-control"
+                   [disabled]="contenidoActual.centrado || isPlantillaCreada()"
+                   placeholder=""
+                   [(ngModel)]="contenidoActual.posicion_x">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="posicionY">Posición Y</label>
-            <input id="posicionY" type="number" class="form-control" placeholder="" [(ngModel)]="contenidoActual.posicion_y">
+            <input id="posicionY"
+                   type="number"
+                   class="form-control"
+                   [disabled]="isPlantillaCreada()"
+                   placeholder=""
+                   [(ngModel)]="contenidoActual.posicion_y">
           </div>
-        </div><div class="col">
-        <div class="form-group">
-          <label for="separacionElementoLista">Separación elemento lista</label>
-          <input id="separacionElementoLista" type="number" class="form-control" placeholder="" [(ngModel)]="contenidoActual.separacion_elemento_lista">
         </div>
-      </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="separacionElementoLista">Separación elemento lista</label>
+            <input id="separacionElementoLista"
+                   type="number"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="contenidoActual.separacion_elemento_lista">
+          </div>
+        </div>
       </div>
 
       <div class="row mt-3">
@@ -178,20 +349,34 @@
         <div class="col">
           <div class="form-group">
             <label for="idDinamicoCompuesto">Id</label>
-            <input id="idDinamicoCompuesto" type="number" class="form-control" placeholder="" [(ngModel)]="idDinamicoCompuesto">
+            <input id="idDinamicoCompuesto"
+                   type="number"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="idDinamicoCompuesto">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <label for="textoDinamicoCompuesto">Texto</label>
-            <input id="textoDinamicoCompuesto" type="text" class="form-control" placeholder="" [(ngModel)]="textoDinamicoCompuesto">
+            <input id="textoDinamicoCompuesto"
+                   type="text"
+                   class="form-control"
+                   placeholder=""
+                   [disabled]="isPlantillaCreada()"
+                   [(ngModel)]="textoDinamicoCompuesto">
           </div>
         </div>
         <div class="col">
           <div class="form-group">
             <div class="form-group">
               <label for="posicion">Posicion:</label>
-              <select class="form-control" id="posicion" (change)="cambiarAncho()" [(ngModel)]="posicionSeleccionada">
+              <select class="form-control"
+                      id="posicion"
+                      (change)="cambiarPosicion()"
+                      [disabled]="isPlantillaCreada()"
+                      [(ngModel)]="posicionSeleccionada">
                 <option [ngValue]="0">IZQUIERDA</option>
                 <option [ngValue]="1">DERECHA</option>
               </select>
@@ -199,7 +384,9 @@
           </div>
         </div>
         <div class="col" style="margin-top: 12px">
-          <button class="btn btn-primary w-100 mt-2" (click)="addContenidoDinamicoCompuesto()">
+          <button class="btn btn-primary w-100 mt-2"
+                  [disabled]="isPlantillaCreada()"
+                  (click)="addContenidoDinamicoCompuesto()">
             <i class="bi bi-plus-lg"></i>
           </button>
         </div>
@@ -208,7 +395,8 @@
           <div class="col">
             <ul>
               <li *ngFor="let texto of textosDinamicosCompuestos">
-                {{texto.id}} - {{texto.texto}} - {{texto.posicion == 1 ? 'DERECHA' : 'IZQUIERDA'}}
+                {{ texto.id }} - {{ texto.texto }} - {{ texto.posicion == 1 ? 'DERECHA' : 'IZQUIERDA' }}
+                <i class="bi bi-trash cursor-mano" (click)="deleteTextoDinamicoCompuesto(texto.id)"></i>
               </li>
             </ul>
           </div>
@@ -234,6 +422,22 @@
 
       <div class="titulo-configuracion mt-3">
         <span>Datos dinámicos</span>
+      </div>
+
+      <div class="row mt-1">
+        <div class="col">
+          <div class="form-group">
+            <select class="form-control" id="exampleSelect" (change)="cambiarDatosDinamicosSeleccionados()"
+                    [(ngModel)]="datosDinamicosSeleccionados">
+              <option [ngValue]="1">Datos dinámicos 1</option>
+              <option [ngValue]="2">Datos dinámicos 2</option>
+              <option [ngValue]="3">Datos dinámicos 3</option>
+              <option [ngValue]="4">Datos dinámicos 4</option>
+              <option [ngValue]="5">Datos dinámicos 5</option>
+              <option [ngValue]="6">Datos dinámicos 6</option>
+            </select>
+          </div>
+        </div>
       </div>
 
       <div class="row mt-2" style="max-height: 200px; overflow-y: auto;">

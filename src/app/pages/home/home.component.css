@@ -22,4 +22,15 @@
   cursor: pointer;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.item-seleccionado:hover {
+  color: coral !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+}
+
 /*# sourceMappingURL=home.component.css.map */

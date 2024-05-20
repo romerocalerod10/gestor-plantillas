@@ -1,0 +1,233 @@
+{
+  "id": 8,
+  "nombre": "Control de Pasajeros Inspector",
+  "contenido": [
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "CONTROL DE PASAJEROS",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 25,
+      "posicion_x": 0,
+      "tamano_fuente": 16,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": 0,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 15,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "EXPEND: ",
+          "id": 1,
+          "posicion": 0
+        },
+        {
+          "texto": " GUAGUA.: ",
+          "id": 2,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "SERVICIO: ",
+          "id": 3,
+          "posicion": 0
+        },
+        {
+          "texto": " COND.: ",
+          "id": 4,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "LINEA: ",
+          "id": 5,
+          "posicion": 0
+        },
+        {
+          "texto": " EXPEND.: ",
+          "id": 6,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "Sentido: ",
+          "id": 7,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": 8,
+      "texto": "",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 80,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "Pago directo normal: ",
+          "id": 9,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 80,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "Billete Ida-Vuelta: ",
+          "id": 10,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 80,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "TOTAL PASAJEROS: ",
+          "id": 11,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 0,
+      "id": -1,
+      "texto": "Emitido por:",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 15,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    },
+    {
+      "tipo": 1,
+      "id": -1,
+      "texto": "",
+      "centrado": false,
+      "ancho": 0,
+      "posicion_y": 5,
+      "posicion_x": 0,
+      "tamano_fuente": 9,
+      "negrita": true,
+      "separacion_elemento_lista": -1,
+      "textos": [
+        {
+          "texto": "Inspector Nº: ",
+          "id": 12,
+          "posicion": 0
+        }
+      ]
+    },
+    {
+      "tipo": 3,
+      "id": -1,
+      "texto": "",
+      "centrado": true,
+      "ancho": 0,
+      "posicion_y": 10,
+      "posicion_x": 0,
+      "tamano_fuente": 0,
+      "negrita": true,
+      "separacion_elemento_lista": -1
+    }
+  ]
+}
