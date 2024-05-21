@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionY">Posición Y</label>
+      <input id="posicionY"
+             type="number"
+             class="form-control"
+             (keyup)="modificarContenido()"
+             [(ngModel)]="contenidoActual.posicion_y">
+    </div>
+  </div>
+</div>
+
+<!--<div class="file-upload mt-2"-->
+<!--     (dragover)="onDragOver($event)"-->
+<!--     (dragleave)="onDragLeave($event)"-->
+<!--     (drop)="onDrop($event)"-->
+<!--     [class.dragover]="isDragOver">-->
+<!--  <input type="file" (change)="onFileSelected($event)" accept=".bmp" hidden #fileInput>-->
+<!--  <p (click)="fileInput.click()">Arrastra el fichero aquí o clica para seleccionarlo</p>-->
+<!--  <img *ngIf="previewUrl" [src]="previewUrl" alt="Image preview" class="image-preview">-->
+<!--</div>-->

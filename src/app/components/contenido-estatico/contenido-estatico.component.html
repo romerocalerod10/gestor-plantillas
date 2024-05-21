@@ -1,0 +1,83 @@
+<div class="row mt-3">
+  <div class="col">
+    <div class="form-group">
+      <label for="textoFijo">Texto fijo</label>
+      <input id="textoFijo"
+             type="text"
+             class="form-control"
+             (keyup)="modificarContenido()"
+             [disabled]="disabled"
+             [(ngModel)]="contenidoActual.texto">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="tamanoFuente">Tamaño fuente</label>
+      <input id="tamanoFuente"
+             type="number"
+             class="form-control"
+             (keyup)="modificarContenido()"
+             [disabled]="disabled"
+             [(ngModel)]="contenidoActual.tamano_fuente">
+    </div>
+  </div>
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="centrado">Centrado</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               (change)="modificarContenido()"
+               [(ngModel)]="contenidoActual.centrado"
+               id="centrado">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-3">
+
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionX">Posición X</label>
+      <input id="posicionX"
+             type="number"
+             class="form-control"
+             [disabled]="contenidoActual.centrado || disabled"
+             (keyup)="modificarContenido()"
+             [(ngModel)]="contenidoActual.posicion_x">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionY">Posición Y</label>
+      <input id="posicionY"
+             type="number"
+             class="form-control"
+             [disabled]="disabled"
+             (keyup)="modificarContenido()"
+             [(ngModel)]="contenidoActual.posicion_y">
+    </div>
+  </div>
+
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="negrita">Negrita</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               (change)="modificarContenido()"
+               [(ngModel)]="contenidoActual.negrita"
+               id="negrita">
+      </div>
+    </div>
+  </div>
+</div>
+
+

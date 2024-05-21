@@ -1,0 +1,144 @@
+<div class="row my-3">
+
+  <div class="col">
+    <div class="form-group">
+      <label for="ancho">Ancho:</label>
+      <select class="form-control"
+              id="ancho"
+              (change)="cambiarAncho()"
+              [disabled]="disabled"
+              [(ngModel)]="contenidoActual.ancho">
+        <option [ngValue]="0">DEFECTO</option>
+        <option [ngValue]="1">DINÁMICO</option>
+      </select>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="tamanoFuente">Tamaño fuente</label>
+      <input id="tamanoFuente"
+             type="number"
+             class="form-control"
+             placeholder=""
+             [disabled]="disabled"
+             [(ngModel)]="contenidoActual.tamano_fuente">
+    </div>
+  </div>
+
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="centrado">Centrado</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               [(ngModel)]="contenidoActual.centrado"
+               id="centrado">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionX">Posición X</label>
+      <input id="posicionX"
+             type="number"
+             class="form-control"
+             [disabled]="contenidoActual.centrado || disabled"
+             placeholder=""
+             [(ngModel)]="contenidoActual.posicion_x">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionY">Posición Y</label>
+      <input id="posicionY"
+             type="number"
+             class="form-control"
+             [disabled]="disabled"
+             placeholder=""
+             [(ngModel)]="contenidoActual.posicion_y">
+    </div>
+  </div>
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="negrita">Negrita</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               [(ngModel)]="contenidoActual.negrita"
+               id="negrita">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row mt-3">
+  <div class="col">
+    <span style="font-weight: bold">Configuración de textos dinámicos compuestos</span>
+  </div>
+</div>
+
+<div class="row" style="border: 2px solid black; padding: 5px; border-radius: 5px; margin: 5px 0;">
+  <div class="col">
+    <div class="form-group">
+      <label for="idDinamicoCompuesto">Id</label>
+      <input id="idDinamicoCompuesto"
+             type="number"
+             class="form-control"
+             [(ngModel)]="id"
+             [disabled]="disabled">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="textoDinamicoCompuesto">Texto</label>
+      <input id="textoDinamicoCompuesto"
+             type="text"
+             class="form-control"
+             [(ngModel)]="texto"
+             [disabled]="disabled">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="form-group">
+        <label for="posicion">Posicion:</label>
+        <select class="form-control"
+                id="posicion"
+                [disabled]="disabled"
+                [(ngModel)]="posicionSeleccionada">
+          <option [ngValue]="0">IZQUIERDA</option>
+          <option [ngValue]="1">DERECHA</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="col" style="margin-top: 12px">
+    <button class="btn btn-primary w-100 mt-2"
+            [disabled]="disabled"
+            (click)="addContenidoDinamicoCompuesto()">
+      <i class="bi bi-plus-lg"></i>
+    </button>
+  </div>
+
+  <div class="row mt-1">
+    <div class="col">
+      <ul *ngIf="contenidoActual.textos.length > 0">
+        <li *ngFor="let texto of contenidoActual.textos">
+          {{ texto.id }} - {{ texto.texto }} - {{ texto.posicion == 1 ? 'DERECHA' : 'IZQUIERDA' }}
+          <i class="bi bi-trash cursor-mano item-seleccionado" (click)="deleteTextoDinamico(texto.id)"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

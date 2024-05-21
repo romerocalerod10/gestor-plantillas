@@ -1,0 +1,37 @@
+$file-upload-border-color: #cccccc
+$file-upload-dragover-border-color: #666666
+$file-upload-background-color: #f0f0f0
+$file-upload-text-color: #666666
+$file-upload-li-color: #333
+$file-upload-font-family: Arial, sans-serif
+
+.file-upload
+  border: 2px dashed $file-upload-border-color
+  padding: 20px
+  text-align: center
+  cursor: pointer
+  transition: background-color 0.3s, border-color 0.3s
+
+  &.dragover
+    border-color: $file-upload-dragover-border-color
+    background-color: $file-upload-background-color
+
+  p
+    margin: 0
+    color: $file-upload-text-color
+    font-family: $file-upload-font-family
+
+  ul
+    list-style-type: none
+    padding: 0
+
+    li
+      margin: 5px 0
+      font-family: $file-upload-font-family
+      color: $file-upload-li-color
+
+  .image-preview
+    margin-top: 10px
+    max-width: 100px
+    max-height: 100px
+    border: 1px solid $file-upload-border-color

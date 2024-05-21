@@ -8,11 +8,27 @@ import {FormsModule} from "@angular/forms";
 import { HomeComponent } from './pages/home/home.component';
 import {ToastrModule} from "ngx-toastr";
 import {HttpClientModule} from "@angular/common/http";
+import { ContenidoEstaticoComponent } from './components/contenido-estatico/contenido-estatico.component';
+import { ContenidoDinamicoSimpleComponent } from './components/contenido-dinamico-simple/contenido-dinamico-simple.component';
+import { ContenidoDinamicoCompuestoComponent } from './components/contenido-dinamico-compuesto/contenido-dinamico-compuesto.component';
+import { ContenidoListaComponent } from './components/contenido-lista/contenido-lista.component';
+import { ContenidoQrComponent } from './components/contenido-qr/contenido-qr.component';
+import {ShowListPipe} from "./pipes/show-list.pipe";
+import { DialogoInfoComponent } from './dialogs/dialogo-info/dialogo-info.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ContenidoEstaticoComponent,
+    ContenidoDinamicoSimpleComponent,
+    ContenidoDinamicoCompuestoComponent,
+    ContenidoListaComponent,
+    ContenidoQrComponent,
+    ShowListPipe,
+    DialogoInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +36,9 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserAnimationsModule,
     FormsModule,
     ToastrModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

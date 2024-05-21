@@ -8,8 +8,8 @@ export class Contenido {
   ancho: number = 0;
   posicion_y: number = 0;
   posicion_x: number = 0;
-  tamano_fuente: number = 15;
+  tamano_fuente: number = 10;
   negrita: boolean = false;
-  separacion_elemento_lista: number = -1;
+  separacion_elemento_lista: number = 10;
   textos: Texto[] = [];
 }
