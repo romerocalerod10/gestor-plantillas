@@ -32,11 +32,11 @@
       "texto": "",
       "centrado": false,
       "ancho": 1,
-      "posicion_y": 10,
+      "posicion_y": 15,
       "posicion_x": 0,
       "tamano_fuente": 8,
       "negrita": true,
-      "separacion_elemento_lista": 5
+      "separacion_elemento_lista": 10
     },
     {
       "tipo": 0,
