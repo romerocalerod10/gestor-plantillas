@@ -33,4 +33,19 @@
   cursor: pointer !important;
 }
 
+.italic-light-gray {
+  font-style: italic;
+  color: #998787;
+}
+
+.contenido-actual .position-absolute.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-actual .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=home.component.css.map */

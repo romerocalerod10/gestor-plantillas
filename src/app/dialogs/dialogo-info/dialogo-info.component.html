@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Ejemplo tipo {{tipo == 2 ? 'Lista' : 'QR'}}</h1>
+<div mat-dialog-content>
+  <div [ngSwitch]="tipo">
+    <div *ngSwitchCase="2">
+      <span class="d-grid" style="line-height: 15pt" *ngFor="let elemento of lista | showList: 1">
+        {{elemento}}
+      </span>
+    </div>
+    <div *ngSwitchCase="3">
+      <div class="row">
+        <div class="col-12 text-center mx-auto">
+          <img class="img-fluid" src="../assets/qr/qrpreview.bmp" width="150" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions style="display: flex; justify-content: flex-end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+</div>

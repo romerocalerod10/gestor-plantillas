@@ -1,0 +1,107 @@
+<div class="row mt-3">
+  <div class="col">
+    <div class="form-group">
+      <label for="idDinamico">Id dinámico comienzo lista</label>
+      <input id="idDinamico"
+             type="number"
+             class="form-control"
+             placeholder=""
+             [disabled]="disabled"
+             (keyup)="modificarContenido()"
+             (change)="modificarContenido()"
+             [(ngModel)]="contenidoActual.id">
+    </div>
+  </div>
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="centrado">Centrado</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               [(ngModel)]="contenidoActual.centrado"
+               id="centrado">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-3">
+
+  <div class="col">
+    <div class="form-group">
+      <label for="ancho">Ancho:</label>
+      <select class="form-control"
+              id="ancho"
+              (change)="cambiarAncho()"
+              [disabled]="disabled"
+              [(ngModel)]="contenidoActual.ancho">
+        <option [ngValue]="0">DEFECTO</option>
+        <option [ngValue]="1">DINÁMICO</option>
+      </select>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="tamanoFuente">Tamaño fuente</label>
+      <input id="tamanoFuente"
+             type="number"
+             class="form-control"
+             placeholder=""
+             [disabled]="disabled"
+             [(ngModel)]="contenidoActual.tamano_fuente">
+    </div>
+  </div>
+  <div class="col my-auto">
+    <div class="row">
+      <div class="col-8">
+        <label for="negrita">Negrita</label>
+      </div>
+      <div class="col-4 text-end">
+        <input style="transform: scale(1.5);"
+               type="checkbox"
+               [disabled]="disabled"
+               [(ngModel)]="contenidoActual.negrita"
+               id="negrita">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionX">Posición X</label>
+      <input id="posicionX"
+             type="number"
+             class="form-control"
+             [disabled]="contenidoActual.centrado || disabled"
+             placeholder=""
+             [(ngModel)]="contenidoActual.posicion_x">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="posicionY">Posición Y</label>
+      <input id="posicionY"
+             type="number"
+             class="form-control"
+             [disabled]="disabled"
+             placeholder=""
+             [(ngModel)]="contenidoActual.posicion_y">
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="separacionElementoLista">Separación elemento lista</label>
+      <input id="separacionElementoLista"
+             type="number"
+             class="form-control"
+             placeholder=""
+             [disabled]="disabled"
+             [(ngModel)]="contenidoActual.separacion_elemento_lista">
+    </div>
+  </div>
+</div>
