@@ -410,12 +410,24 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  private transformPlantilla(plantilla: Plantilla): Plantilla {
+    const transformedPlantilla = { ...plantilla };
+    transformedPlantilla.contenido = transformedPlantilla.contenido.map(contenido => {
+      if (contenido.tipo === 4) {
+        return { ...contenido, tipo: 1 };
+      }
+      return contenido;
+    });
+    return transformedPlantilla;
+  }
+
   descargarPlantilla() {
     if (this.plantilla.id == -1) {
       this.toastr.error('Debes crear una plantilla para poder exportar sus datos', 'Error');
       return;
     }
-    const json = JSON.stringify(this.plantilla, null, 2); // Convertir objeto a JSON
+    const transformedPlantilla = this.transformPlantilla(this.plantilla);
+    const json = JSON.stringify(transformedPlantilla, null, 2); // Convertir objeto a JSON
     const blob = new Blob([json], { type: 'application/json' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
